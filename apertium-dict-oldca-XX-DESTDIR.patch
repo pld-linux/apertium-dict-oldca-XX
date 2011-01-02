@@ -1,0 +1,8 @@
+--- apertium-oldca-XX-0.7/Makefile.am.orig	2008-02-18 15:16:06.000000000 +0100
++++ apertium-oldca-XX-0.7/Makefile.am	2011-01-02 10:52:31.897898177 +0100
+@@ -25,4 +25,4 @@
+ 
+ install-data-local:
+ 	$(prefix)/bin/apertium-gen-modes modes.xml apertium-$(PREFIX1)
+-	$(INSTALL_DATA) $(PREFIX1)-morph.mode $(apertium_oldca_XXmodesdir)
++	$(INSTALL_DATA) $(PREFIX1)-morph.mode $(DESTDIR)$(apertium_oldca_XXmodesdir)
